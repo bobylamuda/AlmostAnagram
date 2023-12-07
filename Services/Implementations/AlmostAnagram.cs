@@ -8,8 +8,8 @@ namespace ConsoleApp2.Services
 {
     public class AlmostAnagram : IAlmostAnagram
     {
-        private List<string> lstStringData = null;
-        private Dictionary<string, string> dicTempString = null;
+        private List<string> lstStringData;
+        private Dictionary<string, string> dicTempString;
 
         public AlmostAnagram(List<string> lstStrData)
         {

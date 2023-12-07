@@ -1,4 +1,6 @@
 # ConsoleApp2
+
+#Almost Anagram#
 Two words make an Almost Anagram Pair if you can transform one into the other by switching out one letter and rearranging the letters if needed.
 
 Examples of Almost Anagram Pairs:
@@ -45,4 +47,6 @@ chat 0
 cabs 1
 saga 0
 pack 1
+
+#Find Rotation#
 

@@ -39,14 +39,14 @@ public class Program
         #endregion
 
         #region Find Rotation
-        int k = 10;//jumlah rotasi
+        int k = 12;//jumlah rotasi
         int j = 3;//nilai rotasi
-        int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 8, 7, 10, 9 };
+        int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 8, 7, 10, 9, 20, 30 };
 
         IRotation rotation = new Rotation(k, j, arr);
         int[] arr2 = rotation.FindRotation();
 
-        foreach(int i in arr2)
+        foreach (int i in arr2)
         {
             Console.Write($"{i} ");
         }

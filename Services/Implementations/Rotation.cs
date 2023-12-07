@@ -1,18 +1,12 @@
 ﻿using ConsoleApp2.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp2.Services.Implementations
 {
     internal class Rotation : IRotation
     {
-        public int TotalRotation { get; set; }
-        public int NumOfRotation { get; set; }
-        public int[] ArrayOfIntegers { get; set; }
-
+        private int TotalRotation { get; set; }
+        private int NumOfRotation { get; set; }
+        private int[] ArrayOfIntegers { get; set; }
         private List<int> lstIntegers;
         private List<int> lstLastIntegers;
 
@@ -28,17 +22,15 @@ namespace ConsoleApp2.Services.Implementations
         {
             for (int i = 0; i < ArrayOfIntegers.Length; i++)
             {
-                int iTemp = ArrayOfIntegers[i];
                 if (i + NumOfRotation > TotalRotation - 1)
                 {
-                    lstIntegers.Add(iTemp);
+                    lstIntegers.Add(ArrayOfIntegers[i]);
                 }
                 else
                 {
-                    lstLastIntegers.Add(iTemp);
+                    lstLastIntegers.Add(ArrayOfIntegers[i]);
                 }
             }
-
             lstIntegers.AddRange(lstLastIntegers);
 
             return lstIntegers.ToArray();

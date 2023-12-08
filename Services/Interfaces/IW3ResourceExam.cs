@@ -12,5 +12,8 @@ namespace ConsoleTestApp.Services.Interfaces
 
         int[] AbsoluteDifferenceBetweenNAnd51(List<int> lstInput);
         bool[] CheckTwoGivenIntegers(List<string> lstInput);
+        bool[] CheckGivenIntegers(List<int> lstInput);
+        string[] ReturnStringStartWithIf(List<string> lstInput);
+
     }
 }

@@ -69,5 +69,43 @@ namespace ConsoleTestApp.Services.Implementations
 
             return arrResult;
         }
+
+        public bool[] CheckGivenIntegers(List<int> lstInput)
+        {
+            bool[] arrResult = new bool[lstInput.Count];
+
+            foreach (int item in lstInput)
+            {
+                if ((Math.Abs(item - 100) <= 10) || (Math.Abs(item - 200) <= 10))
+                {
+                    arrResult[lstInput.IndexOf(item)] = true;
+                }
+                else
+                {
+                    arrResult[lstInput.IndexOf(item)] = false;
+                }
+            }
+
+            return arrResult;
+        }
+
+        public string[] ReturnStringStartWithIf(List<string> lstInput)
+        {
+            string[] arrResult = new string[lstInput.Count];
+
+            foreach (string item in lstInput)
+            {
+                if (item.StartsWith("if", StringComparison.OrdinalIgnoreCase))
+                {
+                    arrResult[lstInput.IndexOf(item)] = item;
+                }
+                else
+                {
+                    arrResult[lstInput.IndexOf(item)] = $"If {item}";
+                }
+            }
+
+            return arrResult;
+        }
     }
 }

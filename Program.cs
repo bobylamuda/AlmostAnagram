@@ -83,23 +83,42 @@ public class Program
         #endregion
 
         #region Check Two Given Integers
-        List<string> lstInput = new List<string>();
-        lstInput.Add("30,0");
-        lstInput.Add("25,5");
-        lstInput.Add("20,30");
-        lstInput.Add("20,25");
-        //30, 0
-        //25, 5
-        //20, 30
-        //20, 25
+        //List<string> lstInput = new List<string>();
+        //lstInput.Add("30,0");
+        //lstInput.Add("25,5");
+        //lstInput.Add("20,30");
+        //lstInput.Add("20,25");
 
-        bool[] arrResult = service.CheckTwoGivenIntegers(lstInput);
-        foreach (var item in arrResult)
+        //bool[] arrResult = service.CheckTwoGivenIntegers(lstInput);
+        //foreach (var item in arrResult)
+        //{
+        //    Console.WriteLine($"{item} ");
+        //}
+        #endregion
+
+        #region Check given integers
+        //List<int> lstInput = new List<int>();
+        //lstInput.Add(103);
+        //lstInput.Add(90);
+        //lstInput.Add(89);
+
+        //bool[] arrResult = service.CheckGivenIntegers(lstInput);
+        //foreach (var item in arrResult)
+        //{
+        //    Console.WriteLine($"{item} ");
+        //}
+        #endregion
+
+        #region Return String Start With If
+        List<string> lstInput = new List<string>();
+        lstInput.Add("If else");
+        lstInput.Add("else");
+
+        foreach (var item in service.ReturnStringStartWithIf(lstInput))
         {
             Console.WriteLine($"{item} ");
         }
         #endregion
-
         Console.ReadLine();
 
         #endregion

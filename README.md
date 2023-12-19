@@ -73,7 +73,6 @@ Expected Output:
 0
 
 3. Write a C# Sharp program to check two given integers, and return true if one of them is 30 or if their sum is 30.
-
 Sample Input:
 30, 0
 25, 5
@@ -86,7 +85,6 @@ True
 False
 
 4. Write a C# Sharp program to check a given integer and return true if it is within 10 of 100 or 200.
-
 Sample Input:
 103
 90
@@ -97,7 +95,6 @@ True
 False
 
 5. Write a C# Sharp program to create a string where 'if' is added to the front of a given string. If the string already begins with 'if', return it unchanged.
-
 Sample Input:
 "if else"
 "else"
@@ -105,9 +102,9 @@ Expected Output:
 if else
 if else
 
+##### 08 December 2023 ##########
 
 6. Write a C# Sharp program to remove the character at a given position in the string. The given position will be in the range 0..(string length -1) inclusive.
-
 Sample Input:
 "Python", 1
 "Python", o
@@ -118,7 +115,6 @@ ython
 Pythn
 
 7. Write a C# Sharp program to exchange the first and last characters in a given string and return the new string.
-
 Sample Input:
 "abcd"
 "a"
@@ -129,8 +125,11 @@ dbca
 a
 yx
 
-8. Write a C# Sharp program to create a string which is 4 copies of the 2 front characters of a given string. If the given string length is less than 2 return the original string.
+[7-8] [SELINGAN] ReverseString
 
+
+8. Write a C# Sharp program to create a string which is 4 copies of the 2 front characters of a given string. 
+     If the given string length is less than 2 return the original string.
 Sample Input:
 "C Sharp"
 "JS"
@@ -141,7 +140,6 @@ JSJSJSJS
 a
 
 9. Write a C# Sharp program to create a string with the last char added at the front and back of a given string of length 1 or more.
-
 Sample Input:
 "Red"
 "Green"
@@ -152,7 +150,6 @@ nGreenn
 111
 
 10. Write a C# Sharp program to check if a given positive number is a multiple of 3 or 7.
-
 Sample Input:
 3
 14
@@ -165,7 +162,6 @@ True
 False
 
 11. Write a C# Sharp program to create a string taking the first 3 characters of a given string. Return the string with the 3 characters added at both the front and back. If the given string length is less than 3, use whatever characters are there.
-
 Sample Input:
 "Python"
 "JS"
@@ -174,9 +170,10 @@ Expected Output:
 PytPythonPyt
 JSJSJS
 CodCodeCod
+ 
+ ##### 09 December 2023 ########## 
 
 12. Write a C# Sharp program to check if a given string starts with 'C#' or not.
-
 Sample Input:
 "C# Sharp"
 "C#"
@@ -187,7 +184,6 @@ True
 False
 
 13. Write a C# Sharp program that checks whether one temperature is less than 0 and another is greater than 100.
-
 Sample Input:
 120, -1
 -1, 120
@@ -198,7 +194,6 @@ True
 False
 
 14. Write a C# Sharp program to check two given integers whether either of them is in the range 100..200 inclusive.
-
 Sample Input:
 100, 199
 250, 300
@@ -208,8 +203,7 @@ True
 False
 True
 
-15. Write a C# Sharp program to check whether three given integer values are in the range 20..50 inclusive. Return true if 1 or more of them are in the said range otherwise false.
-
+ 15. Write a C# Sharp program to check whether three given integer values are in the range 20..50 inclusive. Return true if 1 or more of them are in the said range otherwise false.
 Sample Input:
 11, 20, 12
 30, 30, 17
@@ -220,9 +214,8 @@ True
 True
 True
 False
-
+ 
 16. Write a C# Sharp program to check whether two given integer values are in the range 20..50 inclusive. Return true if 1 or other is in the range, otherwise false.
-
 Sample Input:
 20, 84
 14, 50
@@ -402,7 +395,7 @@ Sample Input:
 Expected Output:
 aababcabcd
 aababc
-a
+a 
 
 31. Write a C# Sharp program to count a substring of length 2 that appears in a given string. This substring appears as the last 2 characters of the string. Do not count the end substring.
 
@@ -461,6 +454,8 @@ Expected Output:
 1
 2
 
+ ##### 10 December 2023 ##########
+
 36. Write a C# Sharp program to create a string from a given string where a specified character is removed except for the beginning and ending positions.
 
 Sample Input:
@@ -482,7 +477,6 @@ Expected Output:
 Pyon
 JaScpt
 HT
-
 38. Write a C# Sharp program to count the number of two 5's next to each other in an array of integers. Count the situation where the second 5 is actually a 6.
 
 Sample Input:
@@ -541,7 +535,6 @@ True
 True
 True
 False
-
 43. Write a C# Sharp program to check if a given number that is not negative is a multiple of 3 or 7, but not both.
 
 Sample Input:
@@ -574,12 +567,13 @@ Sample Input:
 10, 20
 21, 220
 Expected Output:
-10
+100
 18
 18
 241
 
-46. Write a C# Sharp program to check whether a given string begins with "F" or ends with "B". If the string starts with "F" return "Fizz" and return "Buzz" if it ends with "B" If the string starts with "F" and ends with "B" return "FizzBuzz". In other cases return the original string.
+46. Write a C# Sharp program to check whether a given string begins with "F" or ends with "B". 
+       If the string starts with "F" return "Fizz" and return "Buzz" if it ends with "B" If the string starts with "F" and ends with "B" return "FizzBuzz". In other cases return the original string.
 In other cases return the original string.
 Sample Input:
 "FizzBuzz"
@@ -709,6 +703,8 @@ Expected Output:
 10
 0
 
+ ##### 14 December 2023 ##########
+
 57. Write a C# Sharp program to compute the sum of the three given integers. All values in the range 10..20 inclusive count as 0, except 13 and 17.
 
 Sample Input:
@@ -734,6 +730,8 @@ Expected Output:
 12
 13
 0
+
+ ##### 18 December 2023 ##########
 
 59. Write a C# Sharp program to compare three integers (small, medium, and large) and return true if the difference between small and medium and the difference between medium and large is the same.
 

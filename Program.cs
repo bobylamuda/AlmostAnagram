@@ -17,6 +17,14 @@ public class Program
 
         IW3ResourceExam<IStringValue> service = new W3ResourceExam();
 
+        #region [061] 
+        string s1 = "whats";
+        string s2 = "app";
+        string values = service.CreateAStringUsingTheTwoGivenStrings_s1s2_NewStringFormat_s1s2s2s1(s1, s2);
+
+        Console.WriteLine($"[{s1} {s2}] => {values}");
+        #endregion
+
         #region [060] CreateAStringUsingTheTwoGivenStrings_s1s2_NewStringFormat_s1s2s2s1
         //string s1 = "whats";
         //string s2 = "app";
@@ -25,11 +33,18 @@ public class Program
         //Console.WriteLine($"[{s1} {s2}] => {values}");
         #endregion
 
-        #region [058]  SumThreeIntegerInRange10_20WillCountAsNolExcept13And17
-        int[] arrInteger = new int[] { 14, 15, 16 };
-        int values = service.SumThreeIntegerInRange10_20WillCountAsNolExcept13And17(arrInteger);
+        #region [059] CompareThreeIntegersSmallMediumAndLarge_AndReturnTrueIfTheDifferenceBetweenSmallAndMediumAndTheDifferenceBetweenMediumAndLargeIsTheSame
+        //int[] arrInteger = new int[] { -1, 0, 1 };
+        //bool values = service.CompareThreeIntegersSmallMediumAndLarge_AndReturnTrueIfTheDifferenceBetweenSmallAndMediumAndTheDifferenceBetweenMediumAndLargeIsTheSame(arrInteger);
 
-        Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        #endregion
+
+        #region [058]  CheckTwoIntegersAndReturnTheValueNearestTo13WithoutCrossingOver_Return0IfBothNumbersExceed
+        //int[] arrInteger = new int[] { 17, 33 };
+        //int values = service.CheckTwoIntegersAndReturnTheValueNearestTo13WithoutCrossingOver_Return0IfBothNumbersExceed(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
         #endregion
 
         #region [057]  SumThreeIntegerInRange10_20WillCountAsNolExcept13And17

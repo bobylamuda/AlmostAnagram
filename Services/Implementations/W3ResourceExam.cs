@@ -1,6 +1,7 @@
 ﻿using ConsoleTestApp.Models.Interfaces;
 using ConsoleTestApp.Services.Interfaces;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 
 namespace ConsoleTestApp.Services.Implementations
@@ -996,6 +997,7 @@ namespace ConsoleTestApp.Services.Implementations
 
             return iResult;
         }
+
         public int SumThreeInteger(int[] arrInteger)
         {
             int iResult = arrInteger.Sum();
@@ -1014,6 +1016,7 @@ namespace ConsoleTestApp.Services.Implementations
 
             return iResult;
         }
+
         public int SumThreeIntegerBy13(int[] arrInteger)
         {
             int iResult = 0;
@@ -1026,6 +1029,7 @@ namespace ConsoleTestApp.Services.Implementations
 
             return iResult;
         }
+
         public int SumThreeIntegerInRange10_20WillCountAsNolExcept13And17(int[] arrInteger)
         {
             int iResult = 0;
@@ -1043,6 +1047,42 @@ namespace ConsoleTestApp.Services.Implementations
             return iResult;
         }
 
+        public int CheckTwoIntegersAndReturnTheValueNearestTo13WithoutCrossingOver_Return0IfBothNumbersExceed(int[] arrInteger)
+        {
+            int iResult = 0;
+            const int iConst = 13;
+
+            int iA = arrInteger[0];
+            int iB = arrInteger[1];
+
+            if (iA > iConst & iB > iConst)
+            {
+                iResult = 0;
+                return iResult;
+            }
+
+            iA = Math.Abs(arrInteger[0] - iConst);
+            iB = Math.Abs(arrInteger[1] - iConst);
+
+            iResult = iA > iB ? arrInteger[1] : arrInteger[0];
+
+            return iResult;
+        }
+
+        public bool CompareThreeIntegersSmallMediumAndLarge_AndReturnTrueIfTheDifferenceBetweenSmallAndMediumAndTheDifferenceBetweenMediumAndLargeIsTheSame(int[] arrInteger)
+        {
+            bool bResult = false;
+            int iA = arrInteger[0];
+            int iB = arrInteger[1];
+            int iC = arrInteger[2];
+
+            int iDiffA = iB - iA;
+            int iDiffB = iC - iB;
+
+            bResult = iDiffA == iDiffB;
+
+            return bResult;
+        }
 
     }
 }

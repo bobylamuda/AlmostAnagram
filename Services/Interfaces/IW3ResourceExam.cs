@@ -73,5 +73,7 @@ namespace ConsoleTestApp.Services.Interfaces
         int SumThreeInteger(int[] arrInteger);
         int SumThreeIntegerBy13(int[] arrInteger);
         int SumThreeIntegerInRange10_20WillCountAsNolExcept13And17(int[] arrInteger);
+        int CheckTwoIntegersAndReturnTheValueNearestTo13WithoutCrossingOver_Return0IfBothNumbersExceed(int[] arrInteger);
+        bool CompareThreeIntegersSmallMediumAndLarge_AndReturnTrueIfTheDifferenceBetweenSmallAndMediumAndTheDifferenceBetweenMediumAndLargeIsTheSame(int[] arrInteger);
     }
 }

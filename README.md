@@ -718,6 +718,8 @@ Expected Output:
 13
 0
 
+ ##### 18 December 2023 ##########
+
 58. Write a C# Sharp program to check two integers and return the value nearest to 13 without crossing over. Return 0 if both numbers exceed.
 
 Sample Input:
@@ -730,8 +732,6 @@ Expected Output:
 12
 13
 0
-
- ##### 18 December 2023 ##########
 
 59. Write a C# Sharp program to compare three integers (small, medium, and large) and return true if the difference between small and medium and the difference between medium and large is the same.
 
@@ -752,6 +752,8 @@ Sample Input:
 Expected Output:
 HiHelloHelloHi
 whatsappappwhats
+
+ ##### 19 December 2023 ##########
 
 61. Write a C# Sharp program to insert a given string into the middle of another given string of length 4.
 

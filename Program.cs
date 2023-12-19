@@ -17,12 +17,70 @@ public class Program
 
         IW3ResourceExam<IStringValue> service = new W3ResourceExam();
 
-        #region [061] 
-        string s1 = "whats";
-        string s2 = "app";
-        string values = service.CreateAStringUsingTheTwoGivenStrings_s1s2_NewStringFormat_s1s2s2s1(s1, s2);
+        #region [069] 
+        string s1 = "Hello";
+        string values = service.MoveTheFirstTwoCharactersToTheEndOfAGivenStringOfLengthAtLeastTwo(s1);
 
-        Console.WriteLine($"[{s1} {s2}] => {values}");
+        Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [068] MoveTheFirstTwoCharactersToTheEndOfAGivenStringOfLengthAtLeastTwo
+        //string s1 = "Hello";
+        //string values = service.MoveTheFirstTwoCharactersToTheEndOfAGivenStringOfLengthAtLeastTwo(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [067] CombineTwoStringsOfLengthAtLeast1_AfterRemovingTheirFirstCharacter
+        //string s1 = "JS";
+        //string s2 = "Python";
+        //string values = service.CombineTwoStringsOfLengthAtLeast1_AfterRemovingTheirFirstCharacter(s1, s2);
+
+        //Console.WriteLine($"[{s1}-{s2}] => {values}");
+        #endregion
+
+        #region [066] CreateANewStringFromTwoGivenStrings_OneOfWhichIsShorterAndOneOfWhichIsLonger_TheNewStringFormatWillBeLongStringShortStringLongString
+        //string s1 = "JS";
+        //string s2 = "Python";
+        //string values = service.CreateANewStringFromTwoGivenStrings_OneOfWhichIsShorterAndOneOfWhichIsLonger_TheNewStringFormatWillBeLongStringShortStringLongString(s1, s2);
+
+        //Console.WriteLine($"[{s1}-{s2}] => {values}");
+        #endregion
+
+        #region [065] CreateANewStringWithoutTheFirstAndLastCharacterOfAGivenStringOfLengthAtLeastTwo
+        //string s1 = "Python";
+        //string values = service.CreateANewStringWithoutTheFirstAndLastCharacterOfAGivenStringOfLengthAtLeastTwo(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [064] CreateAStringFromTheFirstHalfOfAGivenStringOfEvenLength
+        //string s1 = "Hi";
+        //string values = service.CreateAStringFromTheFirstHalfOfAGivenStringOfEvenLength(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [063] CreateANewStringUsingTheFirstTwoCharactersOfAGivenString_IfTheStringLengthIsLessThan2_ReturnTheOriginalString
+        //string s1 = " ";
+        //string values = service.CreateANewStringUsingTheFirstTwoCharactersOfAGivenString_IfTheStringLengthIsLessThan2_ReturnTheOriginalString(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [062] CreateAStringUsingThreeCopiesOfTheLastTwoCharactersOfAGivenStringOfLengthAtLeastTwo
+        //string s1 = " ";
+        //string values = service.CreateAStringUsingThreeCopiesOfTheLastTwoCharactersOfAGivenStringOfLengthAtLeastTwo(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [061] InsertAGivenStringIntoTheMiddleOfAnotherGivenStringOfLength4
+        //string s1 = "(())";
+        //string s2 = "Hi";
+        //string values = service.InsertAGivenStringIntoTheMiddleOfAnotherGivenStringOfLength4(s1, s2);
+
+        //Console.WriteLine($"[{s1} {s2}] => {values}");
         #endregion
 
         #region [060] CreateAStringUsingTheTwoGivenStrings_s1s2_NewStringFormat_s1s2s2s1

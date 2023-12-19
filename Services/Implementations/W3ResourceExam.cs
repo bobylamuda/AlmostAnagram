@@ -863,6 +863,7 @@ namespace ConsoleTestApp.Services.Implementations
 
             return bResult;
         }
+
         public bool CheckIf_Y_IsGreaterThan_X_And_Z_IsGreaterThan_Y_FromThreeGivenIntegersXYZ(int[] arrInteger)
         {
             bool bResult = false;
@@ -1082,6 +1083,86 @@ namespace ConsoleTestApp.Services.Implementations
             bResult = iDiffA == iDiffB;
 
             return bResult;
+        }
+
+        public string InsertAGivenStringIntoTheMiddleOfAnotherGivenStringOfLength4(string strA, string strB)
+        {
+            string sResult = string.Empty;
+            sResult = $"{strA.Substring(0, 2)}{strB}{strA.Substring(2, 2)}";
+
+            return sResult;
+        }
+
+        public string CreateAStringUsingThreeCopiesOfTheLastTwoCharactersOfAGivenStringOfLengthAtLeastTwo(string str)
+        {
+            string strResult = string.Empty;
+
+            if (str.Length < 2) return strResult;
+
+            for (int i = 0; i < 3; i++)
+            {
+                strResult += str.Substring(str.Length - 2, 2);
+            }
+
+            return strResult;
+        }
+
+        public string CreateANewStringUsingTheFirstTwoCharactersOfAGivenString_IfTheStringLengthIsLessThan2_ReturnTheOriginalString(string str)
+        {
+            string strResult = str;
+            if (str.Length < 2) return strResult;
+
+            strResult = str.Substring(0, 2);
+
+            return strResult;
+        }
+
+        public string CreateAStringFromTheFirstHalfOfAGivenStringOfEvenLength(string str)
+        {
+            string strResult = string.Empty;
+            strResult = str.Substring(0, str.Length / 2);
+
+            return strResult;
+        }
+
+        public string CreateANewStringWithoutTheFirstAndLastCharacterOfAGivenStringOfLengthAtLeastTwo(string str)
+        {
+            string strResult = string.Empty;
+
+            if (str.Length < 2) return strResult;
+
+            strResult = str.Substring(1, str.Length - 2);
+
+            return strResult;
+        }
+
+        public string CreateANewStringFromTwoGivenStrings_OneOfWhichIsShorterAndOneOfWhichIsLonger_TheNewStringFormatWillBeLongStringShortStringLongString(string strA, string strB)
+        {
+            string strResult = string.Empty;
+            strResult = strA.Length > strB.Length ? $"{strA}{strB}{strA}" : $"{strB}{strA}{strB}";
+
+            return strResult;
+        }
+
+        public string CombineTwoStringsOfLengthAtLeast1_AfterRemovingTheirFirstCharacter(string strA, string strB)
+        {
+            string strResult = string.Empty;
+
+            if (strA.Length < 2 && strB.Length < 2) return strResult;
+
+            strResult = $"{strA.Substring(1, strA.Length - 1)}{strB.Substring(1, strB.Length - 1)}";
+
+            return strResult;
+        }
+
+        public string MoveTheFirstTwoCharactersToTheEndOfAGivenStringOfLengthAtLeastTwo(string str)
+        {
+            string strResult = string.Empty;
+            if (str.Length < 2) return str;
+            
+            strResult = $"{str.Substring(2, str.Length - 2)}{str.Substring(0, 2)}";
+
+            return strResult;
         }
 
     }

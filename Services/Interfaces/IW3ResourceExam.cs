@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Numerics;
 using System.Runtime.InteropServices;
+using System.Security;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -69,11 +71,22 @@ namespace ConsoleTestApp.Services.Interfaces
         bool CheckThreeGivenIntegersAndReturnTrueIfOneOfThemIs20OrMoreLessThanOneOfTheOthers(int[] arrInteger);
         int FindTheLargestOfTwoGivenIntegers_IfTheTwoIntegersHaveTheSameRemainderWhenDividedBy7ThenReturnTheSmallestInteger_IfTheTwoIntegersAreTheSameReturn0(int[] arrInteger);
         bool CheckTwoGivenIntegersEachInTheRange10to99_ReturnTrueIfADigitAppearsInBothNumbersSuchAsThe3In13And33(int[] arrInteger);
-        int SumTwoInteger (int[] arrInteger);
+        int SumTwoInteger(int[] arrInteger);
         int SumThreeInteger(int[] arrInteger);
         int SumThreeIntegerBy13(int[] arrInteger);
         int SumThreeIntegerInRange10_20WillCountAsNolExcept13And17(int[] arrInteger);
         int CheckTwoIntegersAndReturnTheValueNearestTo13WithoutCrossingOver_Return0IfBothNumbersExceed(int[] arrInteger);
         bool CompareThreeIntegersSmallMediumAndLarge_AndReturnTrueIfTheDifferenceBetweenSmallAndMediumAndTheDifferenceBetweenMediumAndLargeIsTheSame(int[] arrInteger);
+        string InsertAGivenStringIntoTheMiddleOfAnotherGivenStringOfLength4(string strA, string strB);
+        string CreateAStringUsingThreeCopiesOfTheLastTwoCharactersOfAGivenStringOfLengthAtLeastTwo(string str);
+        string CreateANewStringUsingTheFirstTwoCharactersOfAGivenString_IfTheStringLengthIsLessThan2_ReturnTheOriginalString(string str);
+        string CreateAStringFromTheFirstHalfOfAGivenStringOfEvenLength(string str);
+        string CreateANewStringWithoutTheFirstAndLastCharacterOfAGivenStringOfLengthAtLeastTwo(string str);
+        string CreateANewStringFromTwoGivenStrings_OneOfWhichIsShorterAndOneOfWhichIsLonger_TheNewStringFormatWillBeLongStringShortStringLongString(string strA, string strB);
+        string CombineTwoStringsOfLengthAtLeast1_AfterRemovingTheirFirstCharacter(string strA, string strB);
+        string MoveTheFirstTwoCharactersToTheEndOfAGivenStringOfLengthAtLeastTwo(string str);
+
+
+
     }
 }

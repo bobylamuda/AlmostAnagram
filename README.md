@@ -920,8 +920,6 @@ Py
 a#
 ##
 
-##### 20th December 2023 ##########
-
 77. Write a C# Sharp program to create a string by taking the first character from a string and the last character from another string. If a string's length is 0, use '#' as its missing character.
 
 Sample Input:
@@ -1044,6 +1042,8 @@ python
 bcd
 jython
 
+##### 20th December 2023 ##########
+
 87. Write a C# Sharp program to create a new string from a given string. Return the string without the first or first two 'a' characters otherwise return the original string.
 
 Sample Input:
@@ -1069,6 +1069,8 @@ True
 True
 True
 False
+
+##### 21th December 2023 ##########
 
 89. Write a C# Sharp program to check a given array of integers of length 1 or more. Return true if the first and the last element in the array are equal.
 

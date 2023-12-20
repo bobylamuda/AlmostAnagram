@@ -1,5 +1,7 @@
 ﻿using ConsoleTestApp.Models.Interfaces;
 using ConsoleTestApp.Services.Interfaces;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
@@ -1251,5 +1253,219 @@ namespace ConsoleTestApp.Services.Implementations
             return sResult;
         }
 
+        //77. Write a C# Sharp program to create a string by taking the first character from a string and the last character from another string.
+        //If a string's length is 0, use '#' as its missing character.
+        public string CreateAStringByTakingTheFirstCharacterFromAStringAndTheLastCharacterFromAnotherString(string strA, string strB)
+        {
+            string sResult = string.Empty;
+            if (string.IsNullOrEmpty(strA)) strA = "#";
+            if (string.IsNullOrEmpty(strB)) strB = "#";
+
+            strA = strA.Substring(0, 1);
+            strB = strB.Substring(strB.Length - 1, 1);
+
+            sResult = $"{strA}{strB}";
+
+            return sResult;
+        }
+
+        //78. Write a C# Sharp program to combine two given strings (lowercase). If there are any double characters in the string, omit one character.
+        public string CombineTwoGivenStrings_IfThereAreAnyDoubleCharactersInTheStringOmitOneCharacter(string strA, string strB)
+        {
+            string sResult = string.Empty;
+            if (strA.Length == 0 || strB.Length == 0)
+            {
+                return sResult;
+            }
+
+            strA = strA.ToLower();
+            strB = strB.ToLower();
+
+            if (strA.Substring(strA.Length - 1, 1) == strB.Substring(0, 1))
+            {
+                strA = strA.Remove(strA.Length - 1, 1);
+            }
+
+            sResult = $"{strA}{strB}";
+
+            return sResult;
+        }
+
+        //79. Write a C# Sharp program to create a new string from a given string after swapping the last two characters.
+        public string CreateANewStringFromAGivenStringAfterSwappingTheLastTwoCharacters(string str)
+        {
+            string sResult = str;
+            if (str.Length < 2)
+            {
+                return sResult;
+            }
+
+            char[] cArray = str.Substring(str.Length - 2, 2).Reverse().ToArray();
+            sResult = $"{str.Substring(0, str.Length - 2)}{new string(cArray)}";
+
+            return sResult;
+        }
+
+        //80. Write a C# Sharp program to check if a given string begins with 'abc' or 'xyz'.
+        //If the string begins with 'abc' or 'xyz' return 'abc' or 'xyz' otherwise return an empty string.
+        public string CheckIfAGivenStringBeginsWith_abcORxyz(string str)
+        {
+            if (str.StartsWith("abc")) return "abc";
+            if (str.StartsWith("xyz")) return "xyz";
+
+            return string.Empty;
+        }
+
+        //81. Write a C# Sharp program to check whether the first two characters and the last two characters of a given string are the same.
+        public bool CheckWhetherTheFirstTwoCharactersAndTheLastTwoCharactersOfAGivenStringAreTheSame(string str)
+        {
+            bool bResult = false;
+            if (str.Length < 4)
+            {
+                return bResult;
+            }
+
+            str = str.ToLower();
+
+            bResult = str.Substring(0, 2) == str.Substring(str.Length - 2, 2);
+
+            return bResult;
+        }
+
+        //82. Write a C# Sharp program to combine two given strings.
+        //If the given strings have different lengths remove the characters from the longer string.
+        public string CombineTwoGivenStrings(string strA, string strB)
+        {
+            string sResult = string.Empty;
+            if (strA.Length > strB.Length)
+            {
+                sResult = $"{strB}{strA.Substring(strA.Length - strB.Length)}";
+            }
+            else if (strB.Length > strA.Length)
+            {
+                sResult = $"{strA}{strB.Substring(strB.Length - strA.Length)}";
+            }
+            else
+            {
+                sResult = $"{strA}{strB}";
+            }
+
+            return sResult;
+        }
+
+        //83. Write a C# Sharp program to create a new string using 3 copies of the first 2 characters of a given string.
+        //If the string length is less than 2 use the whole string.
+        public string CreateANewStringUsing3CopiesOfTheFirst2CharactersOfAGivenString(string str)
+        {
+            string sResult = string.Empty;
+            for (int i = 0; i < 3; i++)
+            {
+                if (str.Length < 2)
+                {
+                    sResult += str;
+                }
+                else
+                {
+                    sResult += str.Substring(0, 2);
+                }
+            }
+            return sResult;
+        }
+
+        //84. Write a C# Sharp program to create a new string from a string.
+        //In the case that the two characters at the beginning and end of the given string are the same,
+        //return the given string without the first two characters, otherwise return the original string.
+        public string CreateANewStringFromAString(string str)
+        {
+            string sResult = str;
+            if (str.Length < 4)
+            {
+                return sResult;
+            }
+            str = str.ToLower();
+
+            if (str.Substring(0, 2) == str.Substring(str.Length - 2, 2))
+            {
+                sResult = str.Substring(2);
+            }
+
+            return sResult;
+        }
+
+        //85. Write a C# Sharp program to create a new string from a given string without the first two characters.
+        //Keep the first character if it is "p" and keep the second character if it is "y".
+        public string CreateANewStringFromAGivenStringWithoutTheFirstTwoCharacters(string str)
+        {
+            string sResult = string.Empty;
+            str = str.ToLower();
+
+            char[] cFirstString = str.Substring(0, 2).ToArray();
+            string sLastString = str.Substring(2, str.Length - 2);
+
+            if (cFirstString[0] == 'p')
+            {
+                sResult += $"{cFirstString[0]}";
+            }
+
+            if (cFirstString[1] == 'y')
+            {
+                sResult += $"{cFirstString[1]}";
+            }
+
+            return $"{sResult}{sLastString}";
+        }
+
+        //86. Write a C# Sharp program to create a string from a given string without the first and last character.
+        //This is if the first or last characters are 'a' otherwise return the original given string.
+        public string CreateAStringFromAGivenStringWithoutTheFirstAndLastCharacter(string str)
+        {
+            str = str.ToLower();
+            string sResult = str;
+            const string constStrA = "a";
+
+            string sFirst = sResult.Substring(0, 1);
+            string sLast = sResult.Substring(sResult.Length - 1, 1);
+
+            if (sFirst == constStrA)
+            {
+                sResult = sResult.Substring(1, sResult.Length - 1);
+            }
+
+            if (sLast == constStrA)
+            {
+                sResult = sResult.Substring(0, sResult.Length - 1);
+            }
+
+            return sResult;
+        }
+
+        //87. Write a C# Sharp program to create a new string from a given string.
+        //Return the string without the first or first two 'a' characters otherwise return the original string.
+        public string CreateANewStringFromAGivenString_ReturnTheStringWithoutTheFirstOrFirstTwo(string str)
+        {
+            string sResult = str;
+            if (sResult.StartsWith("aa"))
+            {
+                sResult = sResult.Substring(2, sResult.Length - 2);
+            }
+            else if (sResult.StartsWith("a"))
+            {
+                sResult = sResult.Substring(1, sResult.Length - 1);
+            }
+
+            return sResult;
+        }
+
+        //88. Write a C# Sharp program to check a given array of integers of length 1 or more.
+        //Return true if 10 appears as either the first or last element in the given array.
+        public bool CheckAGivenArrayOfIntegersOfLength_1_OrMore(int[] arrIntegers)
+        {
+            bool bResult = false;
+            const int constInteger = 10;
+
+            bResult = (arrIntegers[0] == constInteger) || (arrIntegers[arrIntegers.Length - 1] == constInteger);
+
+            return bResult;
+        }
     }
 }

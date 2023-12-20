@@ -17,11 +17,105 @@ public class Program
 
         IW3ResourceExam<IStringValue> service = new W3ResourceExam();
 
-        #region [076] CreateANewStringOfLength_2_UsingTheFirstTwoCharactersOfAGivenString
-        string s1 = "";
-        string values = service.CreateANewStringOfLength_2_UsingTheFirstTwoCharactersOfAGivenString(s1);
+        #region [089] 
+        int[] arrInteger = new int[] { 10, 20, 40, 50 };
+        bool values = service.CheckAGivenArrayOfIntegersOfLength_1_OrMore(arrInteger);
 
-        Console.WriteLine($"[{s1}] => {values}");
+        Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        #endregion
+
+        #region [088] CheckAGivenArrayOfIntegersOfLength_1_OrMore
+        //int[] arrInteger = new int[] { 10, 20, 40, 50 };
+        //bool values = service.CheckAGivenArrayOfIntegersOfLength_1_OrMore(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        #endregion
+
+        #region [087] CreateANewStringFromAGivenString_ReturnTheStringWithoutTheFirstOrFirstTwo
+        //string s1 = "jython";
+        //string values = service.CreateANewStringFromAGivenString_ReturnTheStringWithoutTheFirstOrFirstTwo(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [086] CreateAStringFromAGivenStringWithoutTheFirstAndLastCharacter
+        //string s1 = "jython";
+        //string values = service.CreateAStringFromAGivenStringWithoutTheFirstAndLastCharacter(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [085] CreateANewStringFromAGivenStringWithoutTheFirstTwoCharacters
+        //string s1 = "jython";
+        //string values = service.CreateANewStringFromAGivenStringWithoutTheFirstTwoCharacters(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [084] CreateANewStringFromAString
+        //string s1 = "abcab";
+        //string values = service.CreateANewStringFromAString(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [083] CreateANewStringUsing3CopiesOfTheFirst2CharactersOfAGivenString
+        //string s1 = "J";
+        //string values = service.CreateANewStringUsing3CopiesOfTheFirst2CharactersOfAGivenString(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [082] CombineTwoGivenStrings
+        //string s1 = "JS";
+        //string s2 = "Python";
+        //string values = service.CombineTwoGivenStrings(s1, s2);
+
+        //Console.WriteLine($"[{s1} {s2}] => {values}");
+        #endregion
+
+        #region [081] CheckWhetherTheFirstTwoCharactersAndTheLastTwoCharactersOfAGivenStringAreTheSame
+        //string s1 = "xyzsderxy";
+        //bool values = service.CheckWhetherTheFirstTwoCharactersAndTheLastTwoCharactersOfAGivenStringAreTheSame(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [080] CheckIfAGivenStringBeginsWith_abcORxyz
+        //string s1 = "xyzsder";
+        //string values = service.CheckIfAGivenStringBeginsWith_abcORxyz(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [079] CreateANewStringFromAGivenStringAfterSwappingTheLastTwoCharacters
+        //string s1 = "C";
+        //string values = service.CreateANewStringFromAGivenStringAfterSwappingTheLastTwoCharacters(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [078] CombineTwoGivenStrings_IfThereAreAnyDoubleCharactersInTheStringOmitOneCharacter
+        //string s1 = "php";
+        //string s2 = "";
+        //string values = service.CombineTwoGivenStrings_IfThereAreAnyDoubleCharactersInTheStringOmitOneCharacter(s1, s2);
+
+        //Console.WriteLine($"[{s1} {s2}] => {values}");
+        #endregion
+
+        #region [077] CreateAStringByTakingTheFirstCharacterFromAStringAndTheLastCharacterFromAnotherString
+        //string s1 = "Csharp";
+        //string s2 = "";
+        //string values = service.CreateAStringByTakingTheFirstCharacterFromAStringAndTheLastCharacterFromAnotherString(s1, s2);
+
+        //Console.WriteLine($"[{s1} {s2}] => {values}");
+        #endregion
+
+        #region [076] CreateANewStringOfLength_2_UsingTheFirstTwoCharactersOfAGivenString
+        //string s1 = "";
+        //string values = service.CreateANewStringOfLength_2_UsingTheFirstTwoCharactersOfAGivenString(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
         #endregion
 
         #region [075] CreateAStringByTakingAtLeast3CharactersFromTheMiddleOfAGivenString

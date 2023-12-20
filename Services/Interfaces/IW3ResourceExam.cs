@@ -95,5 +95,17 @@ namespace ConsoleTestApp.Services.Interfaces
         string CreateANewStringOfLength2StartingAtTheGivenIndexOfAGivenString(string str, int iIndex);
         string CreateAStringByTakingAtLeast3CharactersFromTheMiddleOfAGivenString(string str);
         string CreateANewStringOfLength_2_UsingTheFirstTwoCharactersOfAGivenString(string str);
+        string CreateAStringByTakingTheFirstCharacterFromAStringAndTheLastCharacterFromAnotherString(string strA, string strB);
+        string CombineTwoGivenStrings_IfThereAreAnyDoubleCharactersInTheStringOmitOneCharacter(string strA, string strB);
+        string CreateANewStringFromAGivenStringAfterSwappingTheLastTwoCharacters(string str);
+        string CheckIfAGivenStringBeginsWith_abcORxyz(string str);
+        bool CheckWhetherTheFirstTwoCharactersAndTheLastTwoCharactersOfAGivenStringAreTheSame(string str);
+        string CombineTwoGivenStrings(string strA, string strB);
+        string CreateANewStringUsing3CopiesOfTheFirst2CharactersOfAGivenString(string str);
+        string CreateANewStringFromAString(string str);
+        string CreateANewStringFromAGivenStringWithoutTheFirstTwoCharacters(string str);
+        string CreateAStringFromAGivenStringWithoutTheFirstAndLastCharacter(string str);
+        string CreateANewStringFromAGivenString_ReturnTheStringWithoutTheFirstOrFirstTwo(string str);
+        bool CheckAGivenArrayOfIntegersOfLength_1_OrMore(int[] arrIntegers);
     }
 }

@@ -17,11 +17,62 @@ public class Program
 
         IW3ResourceExam<IStringValue> service = new W3ResourceExam();
 
-        #region [069] 
-        string s1 = "Hello";
-        string values = service.MoveTheFirstTwoCharactersToTheEndOfAGivenStringOfLengthAtLeastTwo(s1);
+        #region [076] CreateANewStringOfLength_2_UsingTheFirstTwoCharactersOfAGivenString
+        string s1 = "";
+        string values = service.CreateANewStringOfLength_2_UsingTheFirstTwoCharactersOfAGivenString(s1);
 
         Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [075] CreateAStringByTakingAtLeast3CharactersFromTheMiddleOfAGivenString
+        //string s1 = "MuhammadHanafi";
+        //string values = service.CreateAStringByTakingAtLeast3CharactersFromTheMiddleOfAGivenString(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [074] CreateANewStringOfLength2StartingAtTheGivenIndexOfAGivenString
+        //string s1 = "on";
+        //int iInt = 1;
+        //string values = service.CreateANewStringOfLength2StartingAtTheGivenIndexOfAGivenString(s1, iInt);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [073] CreateANewStringUsingTheFirstAndLastNCharactersFromAGivenStringOfLengthAtLeastN
+        //string s1 = "o";
+        //int iInt = 1;
+        //string values = service.CreateANewStringUsingTheFirstAndLastNCharactersFromAGivenStringOfLengthAtLeastN(s1, iInt);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [072] CheckIfAGivenStringEndsWith_on
+        //string s1 = "o";
+        //bool values = service.CheckIfAGivenStringEndsWith_on(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [071] CreateAStringUsingTheTwoMiddleCharactersOfAGivenStringOfEvenLengthAtLeast2
+        //string s1 = "JS";
+        //string values = service.CreateAStringUsingTheTwoMiddleCharactersOfAGivenStringOfEvenLengthAtLeast2(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [070] CreateANewStringWithoutTheFirstAndLastCharactersOfAGivenStringOfAnyLength
+        //string s1 = "Hello";
+        //string values = service.CreateANewStringWithoutTheFirstAndLastCharactersOfAGivenStringOfAnyLength(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
+        #endregion
+
+        #region [069] MoveTheLastTwoCharactersToTheStartOfAGivenStringOfLengthAtLeastTwo
+        //string s1 = "JS";
+        //string values = service.MoveTheLastTwoCharactersToTheStartOfAGivenStringOfLengthAtLeastTwo(s1);
+
+        //Console.WriteLine($"[{s1}] => {values}");
         #endregion
 
         #region [068] MoveTheFirstTwoCharactersToTheEndOfAGivenStringOfLengthAtLeastTwo

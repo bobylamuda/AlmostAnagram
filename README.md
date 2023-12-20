@@ -830,7 +830,7 @@ Expected Output:
 lloHe
 JS
 
- ##### 19 December 2023 ##########
+ ##### 19th December 2023 ##########
 
 69. Write a C# Sharp program to move the last two characters to the start of a given string of length at least two.
 
@@ -919,6 +919,8 @@ He
 Py
 a#
 ##
+
+##### 20th December 2023 ##########
 
 77. Write a C# Sharp program to create a string by taking the first character from a string and the last character from another string. If a string's length is 0, use '#' as its missing character.
 

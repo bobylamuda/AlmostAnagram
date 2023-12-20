@@ -1159,10 +1159,96 @@ namespace ConsoleTestApp.Services.Implementations
         {
             string strResult = string.Empty;
             if (str.Length < 2) return str;
-            
+
             strResult = $"{str.Substring(2, str.Length - 2)}{str.Substring(0, 2)}";
 
             return strResult;
+        }
+
+        public string MoveTheLastTwoCharactersToTheStartOfAGivenStringOfLengthAtLeastTwo(string str)
+        {
+            string sResult = str;
+            if (str.Length < 2) return sResult;
+
+            sResult = $"{str.Substring(str.Length - 2, 2)}{str.Substring(0, str.Length - 2)}";
+
+            return sResult;
+        }
+
+        public string CreateANewStringWithoutTheFirstAndLastCharactersOfAGivenStringOfAnyLength(string str)
+        {
+            string sResult = str;
+
+            if (str.Length < 2) return sResult;
+
+            sResult = str.Substring(1, str.Length - 2);
+
+            return sResult;
+        }
+
+        public string CreateAStringUsingTheTwoMiddleCharactersOfAGivenStringOfEvenLengthAtLeast2(string str)
+        {
+            string sResult = string.Empty;
+
+            if (str.Length <= 2) return str;
+
+            int iMidLength = str.Length / 2;
+            sResult = str.Substring(iMidLength - 1, 2);
+
+            return sResult;
+        }
+
+        public bool CheckIfAGivenStringEndsWith_on(string str)
+        {
+            bool bResult = false;
+            bResult = str.EndsWith("on");
+
+            return bResult;
+        }
+
+        public string CreateANewStringUsingTheFirstAndLastNCharactersFromAGivenStringOfLengthAtLeastN(string str, int iInt)
+        {
+            string strResult = string.Empty;
+            strResult = $"{str.Substring(0, iInt)}{str.Substring(str.Length - iInt, iInt)}";
+
+            return strResult;
+        }
+
+        public string CreateANewStringOfLength2StartingAtTheGivenIndexOfAGivenString(string str, int iIndex)
+        {
+            string strResult = str;
+
+            if (str.Length < 3) return strResult;
+
+            strResult = str.Substring(iIndex, 2);
+
+            return strResult;
+        }
+
+        public string CreateAStringByTakingAtLeast3CharactersFromTheMiddleOfAGivenString(string str)
+        {
+            string sResult = str;
+            if (str.Length < 3) return sResult;
+            sResult = str.Substring((str.Length - 1) / 2 - 1, 3);
+
+            return sResult;
+        }
+
+        //76. Write a C# Sharp program to create a new string of length 2, using the first two characters of a given string.
+        //If the given string length is less than 2 use '#' as missing characters.
+        public string CreateANewStringOfLength_2_UsingTheFirstTwoCharactersOfAGivenString(string str)
+        {
+            string sResult = string.Empty;
+            if (str.Length < 2)
+            {
+                sResult = str.PadRight(2, '#');
+            }
+            else
+            {
+                sResult = str.Substring(0, 2);
+            }
+
+            return sResult;
         }
 
     }

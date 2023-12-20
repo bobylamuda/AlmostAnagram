@@ -1,10 +1,12 @@
 ﻿using Microsoft.VisualBasic;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Numerics;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
@@ -85,8 +87,13 @@ namespace ConsoleTestApp.Services.Interfaces
         string CreateANewStringFromTwoGivenStrings_OneOfWhichIsShorterAndOneOfWhichIsLonger_TheNewStringFormatWillBeLongStringShortStringLongString(string strA, string strB);
         string CombineTwoStringsOfLengthAtLeast1_AfterRemovingTheirFirstCharacter(string strA, string strB);
         string MoveTheFirstTwoCharactersToTheEndOfAGivenStringOfLengthAtLeastTwo(string str);
-
-
-
+        string MoveTheLastTwoCharactersToTheStartOfAGivenStringOfLengthAtLeastTwo(string str);
+        string CreateANewStringWithoutTheFirstAndLastCharactersOfAGivenStringOfAnyLength(string str);
+        string CreateAStringUsingTheTwoMiddleCharactersOfAGivenStringOfEvenLengthAtLeast2(string str);
+        bool CheckIfAGivenStringEndsWith_on(string str);
+        string CreateANewStringUsingTheFirstAndLastNCharactersFromAGivenStringOfLengthAtLeastN(string str, int iInt);
+        string CreateANewStringOfLength2StartingAtTheGivenIndexOfAGivenString(string str, int iIndex);
+        string CreateAStringByTakingAtLeast3CharactersFromTheMiddleOfAGivenString(string str);
+        string CreateANewStringOfLength_2_UsingTheFirstTwoCharactersOfAGivenString(string str);
     }
 }

@@ -1070,8 +1070,6 @@ True
 True
 False
 
-##### 21th December 2023 ##########
-
 89. Write a C# Sharp program to check a given array of integers of length 1 or more. Return true if the first and the last element in the array are equal.
 
 Sample Input:
@@ -1110,7 +1108,6 @@ Sample Input:
 Expected Output:
 Rotated array: 20 -30 -40 10
 
-
 93. Write a C# Sharp program to reverse a given array of integers and length 5.
 
 Sample Input:
@@ -1131,6 +1128,8 @@ Sample Input:
 { 10, 20, -30, -40, 30 }, { 10, 20, 30, 40, 30 }
 Expected Output:
 New array: -30 30
+
+##### 21th December 2023 ##########
 
 96. Write a C# Sharp program to create an array taking the first and last elements of a given array of integers and length 1 or more.
 

@@ -3,8 +3,10 @@ using ConsoleTestApp.Services.Interfaces;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Metadata;
 using System.Text;
+using System.Xml.Linq;
 
 namespace ConsoleTestApp.Services.Implementations
 {
@@ -1466,6 +1468,92 @@ namespace ConsoleTestApp.Services.Implementations
             bResult = (arrIntegers[0] == constInteger) || (arrIntegers[arrIntegers.Length - 1] == constInteger);
 
             return bResult;
+        }
+
+        //89. Write a C# Sharp program to check a given array of integers of length 1 or more. Return true if the first and the last element in the array are equal.
+        public bool CheckAGivenArrayOfIntegersOfLength_1_OrMore_ReturnTrueIfTheFirstAndTheLastElementInTheArrayAreEqual(int[] arrInteger)
+        {
+            bool bResult = false;
+            if (arrInteger.Length > 1)
+            {
+                bResult = arrInteger[0] == arrInteger[arrInteger.Length - 1];
+            }
+
+            return bResult;
+        }
+
+        //90. Write a C# Sharp program to check two given arrays of integers of length 1 or more. Return true if they have the same first element or the same last element.
+        public bool CheckTwoGivenArraysOfIntegersOfLength_1_OrMore_ReturnTrueIfTheyHaveTheSameFirstElementOrTheSameLastElement(int[] arrIntegerA, int[] arrIntegerB)
+        {
+            bool bResult = false;
+            bool bFirst = arrIntegerA[0] == arrIntegerB[0];
+            bool bLast = arrIntegerA[arrIntegerA.Length - 1] == arrIntegerB[arrIntegerA.Length - 1];
+
+            bResult = bFirst || bLast;
+
+            return bResult;
+        }
+
+        //91.
+        public int ComputeTheSumOfTheElementsOfAnArrayOfIntegers(int[] arrInteger)
+        {
+            return arrInteger.Sum();
+        }
+
+        //92. 
+        //Sample Input:
+        //{ 10, 20, -30, -40 }
+        //    Expected Output:
+        //Rotated array: 20 -30 -40 10
+        public int[] RotateTheElementsOfAGivenArrayOfIntegers_length4_InTheLeftDirectionAndReturnTheArray(int[] arrInteger)
+        {
+            List<int> lstResultFirst = new List<int>();
+            List<int> lstResultLast = new List<int>();
+            for (int i = 0; i < arrInteger.Length; i++)
+            {
+                if (i + 2 < arrInteger.Length - 1)
+                {
+                    lstResultLast.Add(arrInteger[i]);
+                }
+                else
+                {
+                    lstResultFirst.Add(arrInteger[i]);
+                }
+
+            }
+
+            lstResultFirst.AddRange(lstResultLast);
+
+            return lstResultFirst.ToArray();
+        }
+
+        //93. Write a C# Sharp program to reverse a given array of integers and length 5.
+        public int[] ReverseAGivenArrayOfIntegersAndLength5(int[] arrInteger)
+        {
+            int[] arrResult = new int[arrInteger.Length];
+            int iInt = 0;
+            for (int i = arrInteger.Length - 1; i > -1; i--)
+            {
+                arrResult[iInt] = arrInteger[i];
+                iInt++;
+            }
+
+            return arrResult;
+        }
+
+        //94. Write a C# Sharp program to find out the maximum element between the first and last element in a given array of integers ( length 4),
+        //replace all elements with the maximum element.
+        public int FindMaxValue(int[] arrInteger)
+        {
+            return arrInteger.Max();
+        }
+
+        //95. Write a C# Sharp program to create an array containing the middle elements from the two given arrays of integers, each length 5.
+        public int[] CreateAnArrayContainingTheMiddleElementsFromTheTwoGivenArrays(int[] arrIntA, int[] arrIntB)
+        {
+            int[] arrResult = new int[2] { arrIntA[2], arrIntB[2] };
+
+            return arrResult;
         }
     }
 }

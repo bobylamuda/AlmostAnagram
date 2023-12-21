@@ -107,5 +107,12 @@ namespace ConsoleTestApp.Services.Interfaces
         string CreateAStringFromAGivenStringWithoutTheFirstAndLastCharacter(string str);
         string CreateANewStringFromAGivenString_ReturnTheStringWithoutTheFirstOrFirstTwo(string str);
         bool CheckAGivenArrayOfIntegersOfLength_1_OrMore(int[] arrIntegers);
+        bool CheckAGivenArrayOfIntegersOfLength_1_OrMore_ReturnTrueIfTheFirstAndTheLastElementInTheArrayAreEqual(int[] arrInteger);
+        bool CheckTwoGivenArraysOfIntegersOfLength_1_OrMore_ReturnTrueIfTheyHaveTheSameFirstElementOrTheSameLastElement(int[] arrIntegerA, int[] arrIntegerB);
+        int ComputeTheSumOfTheElementsOfAnArrayOfIntegers(int[] arrInteger);
+        int[] RotateTheElementsOfAGivenArrayOfIntegers_length4_InTheLeftDirectionAndReturnTheArray(int[] arrInteger);
+        int[] ReverseAGivenArrayOfIntegersAndLength5(int[] arrInteger);
+        int FindMaxValue(int[] arrInteger);
+        int[] CreateAnArrayContainingTheMiddleElementsFromTheTwoGivenArrays(int[] arrIntA, int[] arrIntB);
     }
 }

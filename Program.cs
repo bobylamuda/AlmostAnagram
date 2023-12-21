@@ -17,11 +17,55 @@ public class Program
 
         IW3ResourceExam<IStringValue> service = new W3ResourceExam();
 
-        #region [089] 
-        int[] arrInteger = new int[] { 10, 20, 40, 50 };
-        bool values = service.CheckAGivenArrayOfIntegersOfLength_1_OrMore(arrInteger);
+        #region [095] CreateAnArrayContainingTheMiddleElementsFromTheTwoGivenArrays
+        int[] arrIntegerA = new int[] { 10, 100, 20, -30, -40 };
+        int[] arrIntegerB = new int[] { 10, 100, 100, -30, -40 };
+        int[] values = service.CreateAnArrayContainingTheMiddleElementsFromTheTwoGivenArrays(arrIntegerA, arrIntegerB);
 
-        Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        Console.WriteLine($"[{string.Join(",", arrIntegerA)} # {string.Join(",", arrIntegerB)}] => {string.Join(", ", values)}");
+        #endregion
+
+        #region [094] FindMaxValue
+        //int[] arrInteger = new int[] { 10, 100, 20, -30, -40 };
+        //int values = service.FindMaxValue(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        #endregion
+
+        #region [093] ReverseAGivenArrayOfIntegersAndLength5
+        //int[] arrInteger = new int[] { 10, 20, -30, -40 };
+        //int[] values = service.ReverseAGivenArrayOfIntegersAndLength5(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {string.Join(", ", values)}");
+        #endregion
+
+        #region [092] RotateTheElementsOfAGivenArrayOfIntegers_length4_InTheLeftDirectionAndReturnTheArray
+        //int[] arrInteger = new int[] { 10, 20, -30, -40 };
+        //int[] values = service.RotateTheElementsOfAGivenArrayOfIntegers_length4_InTheLeftDirectionAndReturnTheArray(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {string.Join(", ", values)}");
+        #endregion
+
+        #region [091] ComputeTheSumOfTheElementsOfAnArrayOfIntegers
+        //int[] arrInteger = new int[] { 10, 20, -30, -40, 50 };
+        //int values = service.ComputeTheSumOfTheElementsOfAnArrayOfIntegers(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        #endregion
+
+        #region [090] CheckTwoGivenArraysOfIntegersOfLength_1_OrMore_ReturnTrueIfTheyHaveTheSameFirstElementOrTheSameLastElement
+        //int[] arrIntegerA = new int[] { 10, 20, 40, 50 };
+        //int[] arrIntegerB = new int[] { 1, 20, 40, 5 };
+        //bool values = service.CheckTwoGivenArraysOfIntegersOfLength_1_OrMore_ReturnTrueIfTheyHaveTheSameFirstElementOrTheSameLastElement(arrIntegerA, arrIntegerB);
+
+        //Console.WriteLine($"[{string.Join(",", arrIntegerA)} - {string.Join(",", arrIntegerB)}] => {values}");
+        #endregion
+
+        #region [089] CheckAGivenArrayOfIntegersOfLength_1_OrMore_ReturnTrueIfTheFirstAndTheLastElementInTheArrayAreEqual
+        //int[] arrInteger = new int[] { 24 };
+        //bool values = service.CheckAGivenArrayOfIntegersOfLength_1_OrMore_ReturnTrueIfTheFirstAndTheLastElementInTheArrayAreEqual(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
         #endregion
 
         #region [088] CheckAGivenArrayOfIntegersOfLength_1_OrMore

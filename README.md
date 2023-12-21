@@ -1129,8 +1129,6 @@ Sample Input:
 Expected Output:
 New array: -30 30
 
-##### 21th December 2023 ##########
-
 96. Write a C# Sharp program to create an array taking the first and last elements of a given array of integers and length 1 or more.
 
 Sample Input:
@@ -1179,6 +1177,8 @@ False
 True
 True
 False
+
+##### 21th December 2023 ##########
 
 101. Write a C# Sharp program to check a given array of integers length 3 and create a array. If there is a 5 in the given array immediately followed by a 7 then set 7 to 1.
 

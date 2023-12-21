@@ -1555,5 +1555,71 @@ namespace ConsoleTestApp.Services.Implementations
 
             return arrResult;
         }
+
+        //96. Write a C# Sharp program to create an array taking the first and last elements of a given array of integers and length 1 or more.
+        public int[] CreateAnArrayTakingTheFirstAndLastElementsOfAGivenArrayOfIntegersAndLength_1_OrMore(int[] arrInteger)
+        {
+            int[] arrResult = new int[2];
+            if (arrInteger.Length > 1)
+            {
+                arrResult[0] = arrInteger[0];
+                arrResult[1] = arrInteger[arrInteger.Length - 1];
+            }
+
+            return arrResult;
+        }
+
+        //97. Write a C# Sharp program to check if an array of integers length 2 contains 15 or 20.
+        public bool CheckIfAnArrayOfIntegersLength2Contains15or20(int[] arrInteger)
+        {
+            bool bResult = false;
+            int[] arrValues = new int[] { 15, 20 };
+            bResult = arrInteger.Any(x => arrValues.Contains(x));
+
+            return bResult;
+        }
+
+        //98. Write a C# Sharp program to check if an array of integers with length 2 does not contain 15 or 20.
+        public bool CheckIfAnArrayOfIntegersWithLength2DoesNotContain15or20(int[] arrInteger)
+        {
+            bool bResult = false;
+            int[] arrValues = new int[] { 15, 20 };
+            bResult = !arrInteger.Any(x => arrValues.Contains(x));
+
+            return bResult;
+        }
+
+        //99. Write a C# Sharp program to create an array of integers with a length of 1 or more.
+        //The array length will be double the given array length. All the elements are 0 except the first element which is equal to the given array.
+        public int[] CreateInArrayOfIntegersWithALengthOf_1_OrMore(int[] arrInteger)
+        {
+            int iDouble = arrInteger.Length * 2;
+            int[] arrResult = new int[iDouble];
+            arrResult[0] = arrInteger[0];
+
+            for (int i = 1; i < iDouble; i++)
+            {
+                arrResult[i] = 0;
+            }
+
+            return arrResult;
+        }
+
+        //100. Write a C# Sharp program to check a given array of integers and return true if it contains 10 or 20 twice.
+        //The array length will be 0, 1, or 2.
+        public bool CheckAGivenArrayOfIntegersAndReturnTrueIfItContains10or20Twice(int[] arrInteger)
+        {
+            bool bResult = false;
+            if (arrInteger.Length < 2)
+            {
+                return bResult;
+            }
+
+            bResult = (arrInteger.Count(x => x == 10) == 2) || (arrInteger.Count(x => x == 20) == 2);
+
+            return bResult;
+        }
+
+
     }
 }

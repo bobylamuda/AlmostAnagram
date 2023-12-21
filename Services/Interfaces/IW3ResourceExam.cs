@@ -114,5 +114,10 @@ namespace ConsoleTestApp.Services.Interfaces
         int[] ReverseAGivenArrayOfIntegersAndLength5(int[] arrInteger);
         int FindMaxValue(int[] arrInteger);
         int[] CreateAnArrayContainingTheMiddleElementsFromTheTwoGivenArrays(int[] arrIntA, int[] arrIntB);
+        int[] CreateAnArrayTakingTheFirstAndLastElementsOfAGivenArrayOfIntegersAndLength_1_OrMore(int[] arrInteger);
+        bool CheckIfAnArrayOfIntegersLength2Contains15or20(int[] arrInteger);
+        bool CheckIfAnArrayOfIntegersWithLength2DoesNotContain15or20(int[] arrInteger);
+        int[] CreateInArrayOfIntegersWithALengthOf_1_OrMore(int[] arrInteger);
+        bool CheckAGivenArrayOfIntegersAndReturnTrueIfItContains10or20Twice(int[] arrInteger);
     }
 }

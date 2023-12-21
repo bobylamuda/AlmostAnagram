@@ -17,12 +17,54 @@ public class Program
 
         IW3ResourceExam<IStringValue> service = new W3ResourceExam();
 
-        #region [095] CreateAnArrayContainingTheMiddleElementsFromTheTwoGivenArrays
-        int[] arrIntegerA = new int[] { 10, 100, 20, -30, -40 };
-        int[] arrIntegerB = new int[] { 10, 100, 100, -30, -40 };
-        int[] values = service.CreateAnArrayContainingTheMiddleElementsFromTheTwoGivenArrays(arrIntegerA, arrIntegerB);
+        #region [101] 
+        int[] arrInteger = new int[] { 10 };
+        bool values = service.CheckAGivenArrayOfIntegersAndReturnTrueIfItContains10or20Twice(arrInteger);
 
-        Console.WriteLine($"[{string.Join(",", arrIntegerA)} # {string.Join(",", arrIntegerB)}] => {string.Join(", ", values)}");
+        Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        #endregion
+
+        #region [100] CheckAGivenArrayOfIntegersAndReturnTrueIfItContains10or20Twice
+        //int[] arrInteger = new int[] { 10 };
+        //bool values = service.CheckAGivenArrayOfIntegersAndReturnTrueIfItContains10or20Twice(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        #endregion
+
+        #region [099] CreateInArrayOfIntegersWithALengthOf_1_OrMore
+        //int[] arrInteger = new int[] { 10, 20, -30, -40, 30 };
+        //int[] values = service.CreateInArrayOfIntegersWithALengthOf_1_OrMore(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {string.Join(", ", values)}");
+        #endregion
+
+        #region [098] CheckIfAnArrayOfIntegersWithLength2DoesNotContain15or20
+        //int[] arrInteger = new int[] { 11, 21 };
+        //bool values = service.CheckIfAnArrayOfIntegersWithLength2DoesNotContain15or20(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        #endregion
+
+        #region [097] CheckIfAnArrayOfIntegersLength2Contains15or20
+        //int[] arrInteger = new int[] { 11, 21 };
+        //bool values = service.CheckIfAnArrayOfIntegersLength2Contains15or20(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {string.Join(", ", values)}");
+        #endregion
+
+        #region [096] CreateAnArrayTakingTheFirstAndLastElementsOfAGivenArrayOfIntegersAndLength_1_OrMore
+        //int[] arrInteger = new int[] { 10, 20, -30, -40, 30 };
+        //int[] values = service.CreateAnArrayTakingTheFirstAndLastElementsOfAGivenArrayOfIntegersAndLength_1_OrMore(arrInteger);
+
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {string.Join(", ", values)}");
+        #endregion
+
+        #region [095] CreateAnArrayContainingTheMiddleElementsFromTheTwoGivenArrays
+        //int[] arrIntegerA = new int[] { 10, 100, 20, -30, -40 };
+        //int[] arrIntegerB = new int[] { 10, 100, 100, -30, -40 };
+        //int[] values = service.CreateAnArrayContainingTheMiddleElementsFromTheTwoGivenArrays(arrIntegerA, arrIntegerB);
+
+        //Console.WriteLine($"[{string.Join(",", arrIntegerA)} # {string.Join(",", arrIntegerB)}] => {string.Join(", ", values)}");
         #endregion
 
         #region [094] FindMaxValue

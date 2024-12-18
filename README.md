@@ -103,6 +103,7 @@ if else
 if else
 
 ##### 08 December 2023 ##########
+##### 19 December 2024 ##########
 
 6. Write a C# Sharp program to remove the character at a given position in the string. The given position will be in the range 0..(string length -1) inclusive.
 Sample Input:

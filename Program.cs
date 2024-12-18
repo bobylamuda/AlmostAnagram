@@ -8,20 +8,121 @@ using ConsoleTestApp.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 
+public class TwoIntColumn
+{
+    public int iA { get; set; }
+    public int iB { get; set; }
+}
 public class Program
 {
     public static void Main()
     {
+        #region IRetryResourcesExam
+        IRetryW3ResourcesExam svc = new RetryW3ResourcesExam();
+
+        #region Soal - 1
+        //List<string> lstStringInput = new List<string>();
+        //lstStringInput.Add("1, 2");
+        //lstStringInput.Add("3, 2");
+        //lstStringInput.Add("2, 2");
+
+        //for (int i = 0; i < lstStringInput.Count; i++)
+        //{
+        //    Console.WriteLine(svc.ComputeTheSum(lstStringInput[i]));
+        //}
+        #endregion
+
+        #region Soal - 2
+        //List<int> lstIntegersInput = new List<int>();
+        //lstIntegersInput.Add(53);
+        //lstIntegersInput.Add(30);
+        //lstIntegersInput.Add(51);
+
+        //for (int i = 0; i < lstIntegersInput.Count; i++)
+        //{
+        //    Console.WriteLine(svc.AbsoluteDifferenceBetweenNAnd51(lstIntegersInput[i]));
+        //}
+        #endregion
+
+        #region Soal - 3 
+        //List<string> lstString = new List<string>();
+        //lstString.Add("30, 0");
+        //lstString.Add("25, 5");
+        //lstString.Add("20, 30");
+        //lstString.Add("20, 25");
+
+        //for (int i = 0; i < lstString.Count; i++)
+        //{
+        //    Console.WriteLine(svc.CheckTwoGivenIntegersAndReturnTrueIfOneOfThemIs30orIfTheirSumIs30(lstString[i]));
+        //}
+
+        //Console.WriteLine();    
+
+        //List<TwoIntColumn> lstTwoIntColumns = new List<TwoIntColumn>();
+        //lstTwoIntColumns.Add(new TwoIntColumn() { iA = 30, iB = 0 });
+        //lstTwoIntColumns.Add(new TwoIntColumn() { iA = 25, iB = 5 });
+        //lstTwoIntColumns.Add(new TwoIntColumn() { iA = 20, iB = 30 });
+        //lstTwoIntColumns.Add(new TwoIntColumn() { iA = 20, iB = 25 });
+
+        //for (int i = 0; i < lstTwoIntColumns.Count; i++)
+        //{
+        //    Console.WriteLine(svc.CheckTwoGivenIntegersAndReturnTrueIfOneOfThemIs30orIfTheirSumIs30(lstTwoIntColumns[i].iA, lstTwoIntColumns[i].iB));
+        //}
+        #endregion
+
+        #region Soal - 4
+        //List<int> lstInput = new List<int>();
+        //lstInput.Add(103);
+        //lstInput.Add(90);
+        //lstInput.Add(89);
+        //lstInput.Add(205);
+        //lstInput.Add(195);
+
+        //for (int i = 0; i < lstInput.Count; i++)
+        //{
+        //    Console.WriteLine(svc.CheckAGivenIntegerAndReturnTrueIfItIsWithin10of100Or200(lstInput[i]));
+        //}
+        #endregion
+
+        #region Soal - 5
+        //List<string> lstInput = new List<string>();
+        //lstInput.Add("yes");
+        //lstInput.Add("no");
+        //lstInput.Add("if else");
+        //for (int i = 0; i < lstInput.Count; i++)
+        //{
+        //    Console.WriteLine(svc.CreateAStringWhereIfIsAddedToTheFrontOfAGivenString(lstInput[i]));
+        //}
+        #endregion
+
+        #region Soal - 91
+        int[,] arrInput = { { 10, 20, 30, 40, 50 }, { 10, 20, -30, -40, 50 } };
+        int[] arrInput2 = new int[arrInput.GetLength(1)];
+        for (int i = 0; i < arrInput.GetLength(0); i++)
+        {
+            for (int j = 0; j < arrInput.GetLength(1); j++)
+            {
+                arrInput2[j] = arrInput[i, j];
+            }
+            Console.WriteLine(svc.ProgramToComputeTheSumOfTheElementsOfAnArrayOfIntegers(arrInput2));
+        }
+        #endregion
+
+
+
+        #endregion
+
         #region W3Resource Exam
 
-        IW3ResourceExam<IStringValue> service = new W3ResourceExam();
+        //IW3ResourceExam<IStringValue> service = new W3ResourceExam();
 
         #region [101] 
-        int[] arrInteger = new int[] { 10 };
-        bool values = service.CheckAGivenArrayOfIntegersAndReturnTrueIfItContains10or20Twice(arrInteger);
+        //int[] arrInteger = new int[] { 10 };
+        //bool values = service.CheckAGivenArrayOfIntegersAndReturnTrueIfItContains10or20Twice(arrInteger);
 
-        Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
+        //Console.WriteLine($"[{string.Join(",", arrInteger)}] => {values}");
         #endregion
 
         #region [100] CheckAGivenArrayOfIntegersAndReturnTrueIfItContains10or20Twice
@@ -1086,7 +1187,7 @@ public class Program
         //lstString.Add("saga");
         //lstString.Add("pack");
         //lstString.Add("lack");
-        //lstString.Add("chgt");        
+        //lstString.Add("chgt");
         //lstString.Add("chgt");
         //lstString.Add("sags");
         //lstString.Add("sage");

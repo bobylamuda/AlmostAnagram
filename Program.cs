@@ -8,6 +8,7 @@ using ConsoleTestApp.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 public class TwoIntColumn
@@ -98,19 +99,106 @@ public class Program
         #endregion
 
         #region Soal - 91
-        int[,] arrInput = { { 10, 20, 30, 40, 50 }, { 10, 20, -30, -40, 50 } };
-        int[] arrInput2 = new int[arrInput.GetLength(1)];
-        for (int i = 0; i < arrInput.GetLength(0); i++)
-        {
-            for (int j = 0; j < arrInput.GetLength(1); j++)
-            {
-                arrInput2[j] = arrInput[i, j];
-            }
-            Console.WriteLine(svc.ProgramToComputeTheSumOfTheElementsOfAnArrayOfIntegers(arrInput2));
-        }
+        //int[,] arrInput = { { 10, 20, 30, 40, 50 }, { 10, 20, -30, -40, 50 } };
+        //int[] arrInput2 = new int[arrInput.GetLength(1)];
+        //for (int i = 0; i < arrInput.GetLength(0); i++)
+        //{
+        //    for (int j = 0; j < arrInput.GetLength(1); j++)
+        //    {
+        //        arrInput2[j] = arrInput[i, j];
+        //    }
+        //    Console.WriteLine(svc.ProgramToComputeTheSumOfTheElementsOfAnArrayOfIntegers(arrInput2));
+        //}
         #endregion
 
+        #region Soal - 92
+        //int[] arrInput = { 10, 20, -30, -40 };
+        //Console.WriteLine($"Input: {string.Join(", ", arrInput)}");
+        //int[] arrResult = svc.RotateFirstToLast(arrInput);
+        //Console.WriteLine($"Output: {string.Join(", ", arrResult)}");
+        #endregion
 
+        #region Soal - 93
+        //int[] arrInput = { 10, 20, -30, -40 };
+        //Console.WriteLine($"Input: {string.Join(", ", arrInput)}");
+        //int[] arrResult = svc.ReverseAGivenArray(arrInput);
+        //Console.WriteLine($"Output: {string.Join(", ", arrResult)}");
+        #endregion
+
+        #region Soal - 94
+        //int[] arrInput = { 10, 20, -30, -40 };
+        //Console.WriteLine($"Input: {string.Join(", ", arrInput)}");
+        //int[] arrResult = svc.FindOutTheMaximumElement(arrInput);
+        //Console.WriteLine($"Output: {string.Join(", ", arrResult)}");
+        #endregion
+
+        #region Soal - 95
+        //int[,] arrInput = { { 10, 20, -30, -40, 30 }, { 10, 20, 30, 40, 30 } };
+        //int[] arrInput1 = new int[5];
+        //int[] arrInput2 = new int[5];
+        //for (int i = 0; i < arrInput.GetLength(0); i++) arrInput1[i] = arrInput[0, i];
+        //for (int i = 0; i < arrInput.GetLength(1); i++) arrInput2[i] = arrInput[1, i];
+        //Console.WriteLine($"Input-1: {string.Join(", ", arrInput1)}");
+        //Console.WriteLine($"Input-2: {string.Join(", ", arrInput2)}");
+        //int[] arrResult = svc.CreateAnArrayContainingTheMiddleElements(arrInput);
+        //Console.WriteLine($"Output: {string.Join(", ", arrResult)}");
+        #endregion
+
+        #region Soal-96
+        //int[] arrInput = new int[] { 10, 20, -30, -40, 30, 50 };
+
+        //Console.WriteLine(string.Join(", ", arrInput));
+        //Console.WriteLine(string.Join(", ", svc.TakingTheFirstAndLastElementsOfAGivenArray(arrInput)));
+        #endregion
+
+        #region Soal-97
+        //int[,] arrInputMulti = { { 12, 20 }, { 14, 15 }, { 11, 21 } };
+        //for (int i = 0; i < arrInputMulti.GetLength(0); i++)
+        //{
+        //    int[] arrInput = new int[2];
+        //    for (int j = 0; i < arrInputMulti.GetLength(1); j++)
+        //    {
+        //        if (arrInput[1] > 0) break;
+        //        arrInput[j] = arrInputMulti[i, j];
+        //    }
+        //    Console.WriteLine($"Data ke-{i + 1} - {svc.CheckIfAnArrayOfIntegersLength2Contains15or20(arrInput).ToString()}");
+        //}
+        #endregion
+
+        #region Soal-98
+        //int[,] arrInputMulti = { { 12, 20 }, { 14, 15 }, { 11, 21 } };
+        //for (int i = 0; i < arrInputMulti.GetLength(0); i++)
+        //{
+        //    int[] arrInput = new int[2];
+        //    for (int j = 0; i < arrInputMulti.GetLength(1); j++)
+        //    {
+        //        if (arrInput[1] > 0) break;
+        //        arrInput[j] = arrInputMulti[i, j];
+        //    }
+        //    Console.WriteLine($"Data ke-{i + 1} - {svc.CheckIfAnArrayOfIntegersLength2DoesNotContains15or20(arrInput).ToString()}");
+        //}
+        #endregion
+
+        #region Soal-99
+        //int[] arrInput = { 21, 10, 20, -30, -40, 30 };
+        //Console.WriteLine($"{string.Join(", ", svc.DoubleTheGivenArrayLengthExceptFirstElement(arrInput))}");
+        #endregion
+
+        #region Soal-100
+        int[,] arrInputMulti = { { 12, 20 }, { 20, 20 }, { 10, 10 }, { 10, 0 } };
+
+        for (int i = 0; i < arrInputMulti.GetLength(0); i++)
+        {
+            int[] arrInput = new int[3];
+            for (int j = 0; j < arrInputMulti.GetLength(1); j++)
+            {
+                //if (arrInput.Length > 1) break;
+                //arrInput[j] = arrInputMulti[i, j];
+                arrInput.SetValue(arrInputMulti[i, j], j);
+            }
+            Console.WriteLine(svc.CheckAGivenArrayOfIntegersIfContains10or20Twice(arrInput));
+        }
+        #endregion
 
         #endregion
 
